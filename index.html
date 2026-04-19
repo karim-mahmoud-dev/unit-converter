@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body class="light-mode">
+        <div id="header">
+            <button id="mode-toggle-btn">🌙 Dark Mode</button>
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <input type="text" placeholder="eg. 20" id="input-el">
+            <button id="convert-btn">Convert</button>
+        </div>
+
+        <div id="main">
+            <div class="container">
+                <h2>Length (Meter/Feet)</h2>
+                <p class="conversion-text" id="length-text">20 meters = <span class="convertedValue">65.616 feet</span> | 20 feet = <span class="convertedValue">6.096 meters</span></p>
+            </div>
+                
+            <div class="container">
+                <h2>Volume (Liters/Gallons)</h2>
+                <p class="conversion-text" id="volume-text">20 liters = <span class="convertedValue">5.283 gallons</span> | 20 gallons = <span class="convertedValue">75.708 liters</span></p>
+            </div>
+
+            <div class="container">
+                <h2>Mass (Kilograms/Pounds)</h2>
+                <p class="conversion-text" id="mass-text">20 kilograms = <span class="convertedValue">44.092 pounds</span> | 20 pounds = <span class="convertedValue">9.072 kilograms</span></p>
+            </div>
+        </div>
+        <footer>
+            <p>Developed by Karim Mahmoud</p>
+            <p><a href="https://github.com/Karim-CODEE" target="_blank">[GitHub]</a> | <a href="https://www.linkedin.com/in/karim-mahmoud-73234a204" target="_blank">[LinkedIn]</a></p>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,154 @@
+:root{
+    /* Dark Mode Colors */
+    /* Header */
+    --header-bg-color: #6943FF;
+    --header-text-color: #FFFFFF;
+    --header-input-el-border-color: #B295FF;
+    --header-input-el-bg-color: transparent;
+    --header-btn-bg-color: #FFFFFF;
+    --header-btn-text-color: #3D3D3D;
+    /* Main */
+    --body-bg-color: #1F2937;
+    --body-container-bg-color: #273549;
+    --body-container-head-color: #CCC1FF;
+    --body-container-text-color: #FFFFFF;
+}
+
+.light-mode{
+    /* Light Mode Colors */
+    /* Header */
+    --header-bg-color: #6943FF;
+    --header-text-color: #FFFFFF;
+    --header-input-el-border-color: #B295FF;
+    --header-input-el-bg-color: transparent;
+    --header-btn-bg-color: #FFFFFF;
+    --header-btn-text-color: #3D3D3D;
+    /* Main */
+    --body-bg-color: #F4F4F4;
+    --body-container-bg-color: #FFFFFF;
+    --body-container-head-color: #5A537B;
+    --body-container-text-color: #353535;
+}
+
+#mode-toggle-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+body {
+    background-color: var(--body-bg-color);
+    transition: all 0.5s ease;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "inter", sans-serif;
+}
+
+h1{
+    color: var(--header-text-color);
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.convertedValue{
+    font-weight: bold;
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--header-input-el-border-color);
+}
+
+#header{
+    background-color: var(--header-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#input-el{
+    width: 115px;
+    height: 80px;
+    border: 2px solid var(--header-input-el-border-color);
+    background-color: var(--header-input-el-bg-color);
+    text-align: center;
+    color: var(--header-text-color);
+    font-size: 40px;
+    font-weight: bolder;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    padding: 5px 20px;
+}
+
+#input-el::placeholder{
+    font-size: 23px;
+}
+
+#convert-btn{
+    width: 115px;
+    height: 40px;
+    background-color: var(--header-btn-bg-color);
+    color: var(--header-btn-text-color);
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#main{
+    background-color: var(--body-bg-color);
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+}
+
+.container{
+    background-color: var(--body-container-bg-color);
+    transition: all 0.5s ease;
+    text-align: center;
+    color: var(--body-container-head-color);
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.conversion-text{
+    color: var(--body-container-text-color);
+    font-size: 14px;
+}
+
+footer{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    background-color: var(--body-bg-color);
+    color: var(--body-container-text-color);
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+
+a{
+    color: var(--body-container-text-color);
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+a:hover{
+    text-decoration: underline;
+}
