@@ -29,4 +29,4 @@ During the development of this project, I deepened my understanding of:
 | ![Dark Mode Screenshot](images/dark-preview.png) | ![light Mode Screenshot](images/light-preview.png) |
 
 ---
-developed by [Karim Mahmoud Ahmed](www.google.come)
+developed by [Karim Mahmoud Ahmed](https://github.com/karim-mahmoud-dev)
